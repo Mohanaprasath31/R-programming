@@ -56,3 +56,11 @@ regression of x on y
 > print(regression_equation)
 [1] "x= 0.08 y+ 44.21"
 ------------------------------------------------------------------------------------------------------------------------------------
+> name = readline("Enter name:")
+Enter name:prasath
+> age = readline("Enter age:")
+Enter age:18
+> age = as.integer(age)
+> print(paste("Hi,",name,"next year you will be",age+1,"years old"))
+[1] "Hi, prasath next year you will be 19 years old"
+----------------------------------------------------------------------------------------------------------------------------------
