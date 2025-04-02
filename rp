@@ -172,3 +172,35 @@ op
 [1] "24 - 26 = 50"
 [1] "30 / 10 = 3"
 ------------------------------------------------------------------------------------------------------------------------------------
+1-way without using null
+1 way
+x=c(21,32,42,65)
+y=c(54,34,21,53)
+z=c(23,43,13,13)
+outputs=c(x,y,z)
+a=factor(rep(c("x","y","z"),each=4))
+anova_result=aov(outputs~a)
+summary(anova_result)
+
+op
+      Df Sum Sq Mean Sq F value Pr(>F)
+a            2    794   397.0    1.48  0.278
+Residuals    9   2415   268.3               
+
+
+using null
+
+> x=c(NA,32,42,65,87,56)
+> y=c(54,34,21,53,NA,35)
+> z=c(23,43,13,NA,68,95)
+> b=c(12,NA,55,64,56,57)
+> outputs=c(x,y,z,b)
+> a=factor(rep(c("x","y","z","b"),each=6))
+> anova_result=aov(outputs~a)
+> summary(anova_result)
+
+            Df Sum Sq Mean Sq F value Pr(>F)
+a            3    725   241.8   0.438  0.729
+Residuals   16   8824   551.5               
+4 observations deleted due to missingness
+-----------------------------------------------------------------------------------------------------------------------------------------
