@@ -145,3 +145,30 @@ op
     [1] "Zero"
     [1] "Negative number"
 ------------------------------------------------------------------------------------------------------------------------------------
+switchcase
+
+add=function(x,y){
+ return(x+y)
+}
+subract=function(x,y){
+ return(x-y)
+}
+multiply=function(x,y){
+ return(x*y)
+}
+divide=function(x,y){
+ return(x/y)
+}
+choice=as.integer(readline(prompt="Enter choice(1/2/3/4):"))
+x =as.integer(readline(prompt="Enter first number:"))
+y = as.integer(readline(prompt="Enter second number:"))
+operator=switch(choice,"+","-","*","/")
+result=switch(choice,add(x,y),subract(x,y),multiply(x,y),divide(x,y))
+print(paste(x,operator,y,"=",result))
+
+op
+[1] "10 - 8 = 2"
+[1] "24 + 26 = 50"
+[1] "24 - 26 = 50"
+[1] "30 / 10 = 3"
+------------------------------------------------------------------------------------------------------------------------------------
