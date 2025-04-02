@@ -1,0 +1,31 @@
+correlation
+1 - pearson method
+> x=c(21,32,42,65,32,64,75)
+> y=c(54,34,21,53,12,87,08)
+> correlation=cor(x,y,method="pearson")
+> print(correlation)
+
+
+op
+[1] 0.1094347
+  
+ 
+ 2-spearman method 
+ x=c(21,32,42,65,32,64,75)
+> y=c(54,34,21,53,12,87,08)
+> correlation=cor(x,y,method="spearman")
+> print(correlation)
+
+op
+[1] -0.2522625
+
+
+3-kendal method
+> x=c(21,32,42,65,32,64,75)
+> y=c(54,34,21,53,12,87,08)
+> correlation=cor(x,y,method="kendal")
+> print(correlation)
+
+op
+[1] -0.19518
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
