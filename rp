@@ -64,3 +64,13 @@ Enter age:18
 > print(paste("Hi,",name,"next year you will be",age+1,"years old"))
 [1] "Hi, prasath next year you will be 19 years old"
 ----------------------------------------------------------------------------------------------------------------------------------
+> recursive.factorial=function(x)
++ {
++ if(x==0)
++  return(1)
++ else
++   return(x*recursive.factorial(x-1))
++ }
+> recursive.factorial(8)
+[1] 40320
+-------------------------------------------------------------------------------------------------------------------------------------
