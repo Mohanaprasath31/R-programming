@@ -29,3 +29,30 @@ op
 op
 [1] -0.19518
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+regression
+regressoion of y on x
+> x=c(21,32,42,65,32,64,75)
+> y=c(54,34,21,53,12,87,08)
+> data=data.frame(x,y)
+> model=lm(y~x,data)
+> coefficients=coef(model)
+> intercept=coefficients[1]
+> slope=coefficients[2]
+> regression_equation=paste("y=",round(slope,2),"x+",round(intercept,2))
+> print(regression_equation)
+
+op
+[1] "y= 0.15 x+ 31.35"
+
+regression of x on y
+> x=c(21,32,42,65,32,64,75)
+> y=c(54,34,21,53,12,87,08)
+> data=data.frame(x,y)
+> model=lm(x~y,data)
+> coefficients=coef(model)
+> intercept=coefficients[1]
+> slope=coefficients[2]
+> regression_equation=paste("x=",round(slope,2),"y+",round(intercept,2))
+> print(regression_equation)
+[1] "x= 0.08 y+ 44.21"
+------------------------------------------------------------------------------------------------------------------------------------
