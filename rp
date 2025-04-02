@@ -126,3 +126,22 @@ barplot(num_workers,names.arg=wage_intervals,col="skyblue",
 xlab="weekly wages",ylab="number of workers",main="histogram of weekly wages",
 border="black")
 ---------------------------------------------------------------------------------------------------------------------------------
+dataype
+
+
+num = as.double(readline("Enter a Number:"))
+if(num>0){
+ print("Positive number")
+}else{
+if(num == 0){
+  print("Zero")
+}else{
+  print("Negative number")
+ }
+}
+
+op
+    [1] "Positive number"
+    [1] "Zero"
+    [1] "Negative number"
+------------------------------------------------------------------------------------------------------------------------------------
