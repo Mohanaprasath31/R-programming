@@ -74,3 +74,55 @@ Enter age:18
 > recursive.factorial(8)
 [1] 40320
 -------------------------------------------------------------------------------------------------------------------------------------
+barplot
+
+wage_intervals=c(12.5,17.5,22.5,27.5,32.5,37.5,42.5,47.5)
+num_workers=c(13,18,25,22,16,17,14,23)
+barplot(num_workers,names.arg=wage_intervals,col="skyblue",
+xlab="weekly wages",ylab="number of workers",main="histogram of weekly wages",
+border="black")
+
+scatterplot
+
+car_age<-c(5,7,8,7,2,2,9,4,11,12,9,6)
+car_speed<-c(99,86,87,88,111,103,87,94,78,77,85,86)
+plot(car_age,car_speed,
+main="Scatter Plot of Car Age vs Car Speed",
+xlab="Car Age(Years)",
+ylab="Car Speed (km/h)",
+xlim=c(0,15),
+ylm=c(70,120),
+col="blue",
+pch=19)
+grid(col="gray",lty="dotted")
+
+boxplot
+
+car_age<-c(5,7,8,7,2,2,9,4,11,12,9,6)
+car_speed<-c(99,86,87,88,111,103,87,94,78,77,85,86)
+plot(car_age,car_speed,
+main="Scatter Plot of Car Age vs Car Speed",
+xlab="Car Age(Years)",
+ylab="Car Speed (km/h)",
+xlim=c(0,15),
+ylm=c(70,120),
+col="blue",
+pch=19)
+grid(col="gray",lty="dotted")
+
+HISTOGRAM
+
+wage_intervals=c(12.5,17.5,22.5,27.5,32.5,37.5,42.5,47.5)
+num_workers=c(13,18,25,22,16,17,14,23)
+barplot(num_workers,names.arg=wage_intervals,col="skyblue",
+xlab="weekly wages",ylab="number of workers",main="histogram of weekly wages",
+border="black")
+
+PIECHART
+
+wage_intervals=c(12.5,17.5,22.5,27.5,32.5,37.5,42.5,47.5)
+num_workers=c(13,18,25,22,16,17,14,23)
+barplot(num_workers,names.arg=wage_intervals,col="skyblue",
+xlab="weekly wages",ylab="number of workers",main="histogram of weekly wages",
+border="black")
+---------------------------------------------------------------------------------------------------------------------------------
