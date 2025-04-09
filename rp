@@ -244,3 +244,15 @@ simulated_data=rpois(1000,lambda)
 hist(simulated_data,breaks=10,col="skyblue",main="poisson Distribution",xlab="Number of calls per minute",
 ylab="Frequency",border="black")
 --------------------------------------------------------------------------------------------------------------------------------
+exponential histogram
+
+lambda=5
+lambda_per_min=lambda/60
+prob_within_10=pexp(10,rate=lambda_per_min)
+cat("P(Next call within 10mins)=",prob_within_10,"\n")
+prob_after_15=pexp(15,rate=lambda_per_min)
+cat("P(Next call after 15 mins)=",prob_after_15,"\n")
+set.seed(123)
+random_samples=rexp(50,rate=lambda_per_min)
+hist(random_samples,breaks=10,probablity=TRUE,col="green",main="Exponential distribution",xlab="Tme between calls",ylab="frequency")
+------------------------------------------------------------------------------------------------------------------------------------
