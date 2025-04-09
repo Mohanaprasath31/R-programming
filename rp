@@ -218,3 +218,16 @@ farmers      1  357.0   357.0   1.546  0.240
 manures      3  109.7    36.6   0.158  0.922
 Residuals   11 2540.7   231.0          
 --------------------------------------------------------------------------------------------------------------------------------------
+probablity 
+
+a=20
+p=0.1
+p_good=dbinom(0,size=n,prob=p)
+cat("P(Alll are good)+",p_good."\n")
+prob_exact=dbinom(3,size=n,prob=p)
+cat("p(exactly 3 deefective)=",prob_exact,"\n")
+prob_exact=dbinom(3,size=n,prob=p)
+cat("p(atmost 3 deefective)=",prob_exact,"\n")
+prob_exact=dbinom(2,size=n,prob=p)
+cat("p(atleast  3 deefective)=",prob_exact,"\n")
+--------------------------------------------------------------------------------------------------------------------------------------
