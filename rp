@@ -256,3 +256,12 @@ set.seed(123)
 random_samples=rexp(50,rate=lambda_per_min)
 hist(random_samples,breaks=10,probablity=TRUE,col="green",main="Exponential distribution",xlab="Tme between calls",ylab="frequency")
 ------------------------------------------------------------------------------------------------------------------------------------
+uniform distribution
+
+a=0
+b=15
+prob_less_than_5=punif(5,min=a,max=b)
+cat("P(waiting time less than 5 minutes)=",prob_less_than_5,"\n")
+prob_more_than_10=punif(10,min=a,max=b)
+cat("P(waiting time more than 5 minutes)=",prob_more_than_10,"\n")
+-----------------------------------------------------------------------------------------------------------------------------------
