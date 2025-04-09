@@ -291,3 +291,17 @@ op
  bulbs burning less than 1950= 67 
 No of bulbs burning bw 1920 and 2180=  46 
 ---------------------------------------------------------------------------------------------------------------------------------------
+regression eqn
+
+x1=c(4,5,45,6,4,3)
+x2=c(5,3,7,33,5,2)
+x3=c(5,6,86,3,53,7)
+data=data.frame(x1,x2,x3)
+model=lm(x1~x2+x3,data=data)
+coefficients=coef(model)
+inercept=coefficients[1]
+slope1=coefficients[2]
+slope2=coefficients[3]
+reg_eqn=paste("x1=",round(intercept,2),"+",round(slope1,2),"x2+",round(slope2,2),"x3")
+print(reg_eqn)
+--------------------------------------------------------------------------------------------------------------------------------------
