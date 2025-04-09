@@ -263,5 +263,5 @@ b=15
 prob_less_than_5=punif(5,min=a,max=b)
 cat("P(waiting time less than 5 minutes)=",prob_less_than_5,"\n")
 prob_more_than_10=punif(10,min=a,max=b)
-cat("P(waiting time more than 5 minutes)=",prob_more_than_10,"\n")
+cat("P(waiting time more than 10 minutes)=",prob_more_than_10,"\n")
 -----------------------------------------------------------------------------------------------------------------------------------
