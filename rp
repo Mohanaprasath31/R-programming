@@ -231,3 +231,16 @@ cat("p(atmost 3 deefective)=",prob_exact,"\n")
 prob_exact=dbinom(2,size=n,prob=p)
 cat("p(atleast  3 deefective)=",prob_exact,"\n")
 --------------------------------------------------------------------------------------------------------------------------------------
+probablity barplot
+lambda=4
+prob_5_calls=dpois(5,lambda)
+cat("P(Exactly 5 calls)=",prob_5_calls,"\n")
+prob_atmost_3_calls=dpois(3,lambda)
+cat("P(atmost 3 calls)=",prob_atmost_3_calls,"\n")
+prob_atleast_2_calls=dpois(2,lambda)
+cat("P(atleast  2 calls)=",prob_atleast_2_calls,"\n")
+set.seed(123)
+simulated_data=rpois(1000,lambda)
+hist(simulated_data,breaks=10,col="skyblue",main="poisson Distribution",xlab="Number of calls per minute",
+ylab="Frequency",border="black")
+--------------------------------------------------------------------------------------------------------------------------------
