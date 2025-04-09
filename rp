@@ -272,3 +272,22 @@ prob_more_than_2150=1-pnorm(2150,mean=mu,sd=sigma)
 bulbs_more_than_2150=prob_more_than_2150*n
 cat("No of bulbs burning more than 2150+"round(bulbs_more_than_2150),"\n")
 -----------------------------------------------------------------------------------------------------------------------------------
+
+mu=2040
+sigma=60
+n=2000
+prob_more_than_2150=1-pnorm(2150,mean=mu,sd=sigma)
+bulbs_more_than_2150=prob_more_than_2150*n
+cat("No of bulbs burning more than 2150=",round(bulbs_more_than_2150),"\n")
+prob_less_than_1950=1-pnorm(2150,mean=mu,sd=sigma)
+bulbs_less_than_1950=prob_less_than_1950*n
+cat("No of bulbs burning less than 1950=",round(bulbs_less_than_1950),"\n")
+prob_between_1920_2160=1-pnorm(2160,mean=mu,sd=sigma)
+prob_between_1920_2160=prob_between_1920_2160*n
+cat("No of bulbs burning bw 1920 and 2180= ",round(prob_between_1920_2160),"\n")
+
+op
+ bulbs burning more than 2150= 67 
+ bulbs burning less than 1950= 67 
+No of bulbs burning bw 1920 and 2180=  46 
+---------------------------------------------------------------------------------------------------------------------------------------
