@@ -265,3 +265,10 @@ cat("P(waiting time less than 5 minutes)=",prob_less_than_5,"\n")
 prob_more_than_10=punif(10,min=a,max=b)
 cat("P(waiting time more than 10 minutes)=",prob_more_than_10,"\n")
 -----------------------------------------------------------------------------------------------------------------------------------
+mu=2040
+sigma=60
+n=2000
+prob_more_than_2150=1-pnorm(2150,mean=mu,sd=sigma)
+bulbs_more_than_2150=prob_more_than_2150*n
+cat("No of bulbs burning more than 2150+"round(bulbs_more_than_2150),"\n")
+-----------------------------------------------------------------------------------------------------------------------------------
